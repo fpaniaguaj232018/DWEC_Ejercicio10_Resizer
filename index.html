@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/estilo.css">
+    <title>Resizer</title>
+    <script>
+    function recalcular(){
+        console.log("RECALCULANDO...");
+        var anchoVentana = window.innerWidth;
+        var img1 = document.getElementById("img1");
+        img1.style.width = anchoVentana * 0.33 + "px";
+        var img2 = document.getElementById("img2");
+        img2.style.width = anchoVentana * 0.33 + "px";
+    }
+    </script>
+</head>
+<body onload="recalcular()" onresize="recalcular()">
+    <H1>EJERCICIO 10</H1>
+    <img id="img1" src="images/ds.png">
+    <img id="img2" src="images/ds.png">
+</body>
+</html>
